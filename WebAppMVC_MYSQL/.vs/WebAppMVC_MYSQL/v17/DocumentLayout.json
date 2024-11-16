@@ -1,0 +1,206 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\migrations\\20241115152409_updatedisplayorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\migrations\\20241115152409_updatedisplayorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\migrations\\20241115151215_initialcreatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\migrations\\20241115151215_initialcreatedb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\modelbuilderextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\models\\artsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\models\\artsupplier.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\dboperations\\artsupplierdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\dboperations\\artsupplierdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\webappmvc_mysql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\webappmvc_mysql.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\controllers\\artsuppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\controllers\\artsuppliercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc projecet work\\artefact1\\webappmvc_mysql\\webappmvc_mysql\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{BA08A5A6-24B3-412B-9B98-3383F1D94141}|WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj|solutionrelative:webappmvc_mysql\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelBuilderExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\ModelBuilderExtensions.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\ModelBuilderExtensions.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\ModelBuilderExtensions.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\ModelBuilderExtensions.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwCUAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:19:58.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20241115151215_InitialCreateDB.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Migrations\\20241115151215_InitialCreateDB.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Migrations\\20241115151215_InitialCreateDB.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Migrations\\20241115151215_InitialCreateDB.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Migrations\\20241115151215_InitialCreateDB.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:12:15.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20241115152409_UpdateDisplayOrder.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Migrations\\20241115152409_UpdateDisplayOrder.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Migrations\\20241115152409_UpdateDisplayOrder.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Migrations\\20241115152409_UpdateDisplayOrder.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Migrations\\20241115152409_UpdateDisplayOrder.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAzwA8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:24:09.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ArtSupplierDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\DBOperations\\ArtSupplierDBContext.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\DBOperations\\ArtSupplierDBContext.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\DBOperations\\ArtSupplierDBContext.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\DBOperations\\ArtSupplierDBContext.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAYwBEAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:02:11.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Models\\ErrorViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:01:43.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WebAppMVC_MYSQL",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-15T15:01:11.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ArtSupplier.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Models\\ArtSupplier.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Models\\ArtSupplier.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Models\\ArtSupplier.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Models\\ArtSupplier.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAADwvwwAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T15:00:46.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Program.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Program.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Program.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:46:20.547Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\appsettings.json",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\appsettings.json",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\appsettings.json",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-15T11:10:29.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ArtSupplierController.cs",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Controllers\\ArtSupplierController.cs",
+              "RelativeDocumentMoniker": "WebAppMVC_MYSQL\\Controllers\\ArtSupplierController.cs",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\Controllers\\ArtSupplierController.cs",
+              "RelativeToolTip": "WebAppMVC_MYSQL\\Controllers\\ArtSupplierController.cs",
+              "ViewState": "AQIAADwAAAAAAAAAAAAswEcAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-15T14:49:51.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\WebAppMVC_MYSQL.props" />
-</Project>

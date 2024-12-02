@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj": {}
+    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj": {
+    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+        "projectUniqueName": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
         "projectName": "WebAppMVC_MYSQL",
-        "projectPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+        "projectPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
         "packagesPath": "C:\\Users\\L00176523\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\obj\\",
+        "outputPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

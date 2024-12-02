@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dwsrtceWYL8s39FXVcPgRD3qyBz0PdNBBmHJfmjs5pZAAUh/yIvsNyioVfpY3g/i9wryfsQcii1l+kd8KBSrXw==",
+  "dgSpecHash": "dObS4EYmjseXSTKYqfQdQWT6iGYxtUh7d8J9jzFEDFNiAW9aDtUI7EeI5GBzb2YPNwcUmkixrTxzquRq6ECQ1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
+  "projectFilePath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL\\WebAppMVC_MYSQL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L00176523\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\L00176523\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",

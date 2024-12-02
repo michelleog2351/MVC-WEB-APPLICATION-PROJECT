@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj": {}
+    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj": {
+    "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
+        "projectUniqueName": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
         "projectName": "MyWebAppMVC",
-        "projectPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
+        "projectPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
         "packagesPath": "C:\\Users\\L00176523\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\obj\\",
+        "outputPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

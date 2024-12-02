@@ -10,7 +10,7 @@ using MyWebAppMVC.DBOperations;
 
 namespace MyWebAppMVC.Migrations
 {
-    [DbContext(typeof(ArtSupplierDBContext))]
+    [DbContext(typeof(WarehouseDBContext))]
     partial class ArtSupplierDBContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
@@ -22,37 +22,13 @@ namespace MyWebAppMVC.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("ArtSupplierArtSupply", b =>
-                {
-                    b.Property<int>("ArtSuppliersId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("ArtSuppliesId")
-                        .HasColumnType("int");
-
-                    b.HasKey("ArtSuppliersId", "ArtSuppliesId");
-
-                    b.HasIndex("ArtSuppliesId");
-
-                    b.ToTable("ArtSupplierArtSupply");
-                });
-
-            modelBuilder.Entity("MyWebAppMVC.Models.ArtSupplier", b =>
+            modelBuilder.Entity("MyWebAppMVC.Models.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Category")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ContactNo")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -64,44 +40,40 @@ namespace MyWebAppMVC.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
+                    b.Property<int?>("WarehouseId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
-                    b.ToTable("artsupplier");
+                    b.HasIndex("WarehouseId");
+
+                    b.ToTable("product");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            Category = "Paint",
-                            ContactNo = "0872662523",
-                            Email = "evans.art@gmail.com",
-                            Name = "Evans Art Supplies",
-                            Price = 20m,
-                            Quantity = 2
+                            Name = "Winsor & Newton",
+                            Price = 1m,
+                            Quantity = 1
                         },
                         new
                         {
                             Id = 2,
-                            Category = "Paintbrushes",
-                            ContactNo = "0861273743",
-                            Email = "fine.art@gmail.com",
-                            Name = "Fine Art Supplies",
+                            Name = "Faber Castell",
                             Price = 10m,
-                            Quantity = 6
+                            Quantity = 10
                         },
                         new
                         {
                             Id = 3,
-                            Category = "Paper",
-                            ContactNo = "0834567351",
-                            Email = "still.art@hotmail.com",
-                            Name = "Still Art Supplies",
-                            Price = 50m,
-                            Quantity = 50
+                            Name = "Premier",
+                            Price = 1m,
+                            Quantity = 1
                         });
                 });
 
-            modelBuilder.Entity("MyWebAppMVC.Models.ArtSupply", b =>
+            modelBuilder.Entity("MyWebAppMVC.Models.Supplier", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -109,11 +81,11 @@ namespace MyWebAppMVC.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<DateTime>("CreatedDate")
-                        .HasColumnType("datetime2");
+                    b.Property<string>("ContactNo")
+                        .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("DisplayOrder")
-                        .HasColumnType("int");
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -121,45 +93,124 @@ namespace MyWebAppMVC.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("artsupply");
+                    b.ToTable("supplier");
 
                     b.HasData(
                         new
                         {
                             Id = 1,
-                            CreatedDate = new DateTime(2024, 11, 14, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DisplayOrder = 1111,
-                            Name = "Winsor & Newton"
+                            ContactNo = "0872662523",
+                            Email = "evansart@gmail.com",
+                            Name = "Evans Art"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedDate = new DateTime(2024, 11, 13, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DisplayOrder = 2222,
-                            Name = "Faber Castell"
+                            ContactNo = "0861273743",
+                            Email = "fine.art@gmail.com",
+                            Name = "Fine Art"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedDate = new DateTime(2024, 11, 10, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            DisplayOrder = 3333,
-                            Name = "Premier"
+                            ContactNo = "0834567351",
+                            Email = "still.art@hotmail.com",
+                            Name = "Still Art"
                         });
                 });
 
-            modelBuilder.Entity("ArtSupplierArtSupply", b =>
+            modelBuilder.Entity("MyWebAppMVC.Models.Warehouse", b =>
                 {
-                    b.HasOne("MyWebAppMVC.Models.ArtSupplier", null)
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Address")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ContactNo")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Location")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("warehouse");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Address = "123, Downing Street, Dublin",
+                            ContactNo = "0872734567",
+                            Location = "Ireland",
+                            Name = "Warehouse1"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Address = "375, Beauvelgrade Street, Paris",
+                            ContactNo = "0834562874",
+                            Location = "France",
+                            Name = "Warehouse2"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Address = "421, Unter den Linden, Berlin",
+                            ContactNo = "0865748902",
+                            Location = "Germany",
+                            Name = "Warehouse3"
+                        });
+                });
+
+            modelBuilder.Entity("ProductSupplier", b =>
+                {
+                    b.Property<int>("ProductsId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("SuppliersId")
+                        .HasColumnType("int");
+
+                    b.HasKey("ProductsId", "SuppliersId");
+
+                    b.HasIndex("SuppliersId");
+
+                    b.ToTable("ProductSupplier");
+                });
+
+            modelBuilder.Entity("MyWebAppMVC.Models.Product", b =>
+                {
+                    b.HasOne("MyWebAppMVC.Models.Warehouse", null)
+                        .WithMany("Products")
+                        .HasForeignKey("WarehouseId");
+                });
+
+            modelBuilder.Entity("ProductSupplier", b =>
+                {
+                    b.HasOne("MyWebAppMVC.Models.Product", null)
                         .WithMany()
-                        .HasForeignKey("ArtSuppliersId")
+                        .HasForeignKey("ProductsId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MyWebAppMVC.Models.ArtSupply", null)
+                    b.HasOne("MyWebAppMVC.Models.Supplier", null)
                         .WithMany()
-                        .HasForeignKey("ArtSuppliesId")
+                        .HasForeignKey("SuppliersId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("MyWebAppMVC.Models.Warehouse", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "buPDVTQg5/v+roYZHE3ZRYbeucBN4vSf/ckDsPMiovN2QWAnIoFcht/47R2hVQNPdJFtOTOOvD9x2EbFshNtvw==",
+  "dgSpecHash": "JRBBjvzQzE6sJml923bXJCGqt1PH+z32o1QGsyPFH3AYZ0Nje7z4iUbUT6Hbkeiuvt9iaRgRhhpFqxIjdkCMbA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECET WORK\\Artefact1\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
+  "projectFilePath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\MyWebAppMVC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\L00176523\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\L00176523\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

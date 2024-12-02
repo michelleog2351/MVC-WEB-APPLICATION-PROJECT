@@ -1,6 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using MyWebAppMVC.Controllers;
-using MyWebAppMVC.DBOperations;
+using WebAppMVC_MYSQL.Controllers;
+using WebAppMVC_MYSQL.DBAccess;
 using System;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,10 +8,10 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddDbContext<ArtSupplierDBContext>(options =>
+builder.Services.AddDbContext<WarehouseDBContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
-        new MySqlServerVersion(new Version(8, 0, 33)) // Replace with your MySQL version
+        new MySqlServerVersion(new Version(8, 0, 33))
     )
 );
 

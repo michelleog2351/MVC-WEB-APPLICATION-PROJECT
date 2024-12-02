@@ -1,39 +1,47 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MyWebAppMVC.Models;
+using WebAppMVC_MYSQL.Models;
 
-namespace MyWebAppMVC
+namespace WebAppMVC_MYSQL
 {
     internal static class ModelBuilderExtensions
     {
-        public static void Seed(this ModelBuilder modelBuilder) 
+        public static void Seed(this ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<ArtSupplier>()
+            modelBuilder.Entity<Warehouse>()
                 .HasData(
-                new ArtSupplier { Id = 1, Name = "Evans Art Supplies", Category = "Paint", Quantity = 2, Price = 20, ContactNo = "0872662523", Email = "evans.art@gmail.com"},
-                new ArtSupplier { Id = 2, Name = "Fine Art Supplies", Category = "Paintbrushes", Quantity = 6, Price = 10, ContactNo = "0861273743", Email = "fine.art@gmail.com" },
-                new ArtSupplier { Id = 3, Name = "Still Art Supplies", Category = "Paper", Quantity = 50, Price = 50, ContactNo = "0834567351", Email = "still.art@hotmail.com" });
+                new Warehouse { Id = 1, Name = "Warehouse1", ContactNo = "0872734567", Address = "123, Downing Street, Dublin", Location = "Ireland" },
+                new Warehouse { Id = 2, Name = "Warehouse2", ContactNo = "0834562874", Address = "375, Beauvelgrade Street, Paris", Location = "France" },
+                new Warehouse { Id = 3, Name = "Warehouse3", ContactNo = "0865748902", Address = "421, Unter den Linden, Berlin", Location = "Germany" }
+                );
 
-            modelBuilder.Entity<ArtSupply>()
+            modelBuilder.Entity<Supplier>()
                 .HasData(
-                new ArtSupply { 
-                    Id = 1, 
-                    Name = "Winsor & Newton", 
-                    DisplayOrder = 1111,
-                    CreatedDate = new DateTime(2024, 11, 14, 0, 0, 0)
+                new Supplier { Id = 1, Name = "Evans Art", ContactNo = "0872662523", Email = "evansart@gmail.com" },
+                new Supplier { Id = 2, Name = "Fine Art", ContactNo = "0861273743", Email = "fine.art@gmail.com" },
+                new Supplier { Id = 3, Name = "Still Art", ContactNo = "0834567351", Email = "still.art@hotmail.com" });
+
+            modelBuilder.Entity<Product>()
+                .HasData(
+                new Product
+                {
+                    Id = 1,
+                    Name = "Winsor & Newton",
+                    Quantity = 1,
+                    Price = 1,
                 },
-                new ArtSupply
+                new Product
                 {
                     Id = 2,
                     Name = "Faber Castell",
-                    DisplayOrder = 2222,
-                    CreatedDate = new DateTime(2024, 11, 13, 0, 0, 0)
+                    Quantity = 10,
+                    Price = 10,
                 },
-                new ArtSupply
+                new Product
                 {
                     Id = 3,
                     Name = "Premier",
-                    DisplayOrder = 3333,
-                    CreatedDate = new DateTime(2024, 11, 10, 0, 0, 0)
+                    Quantity = 1,
+                    Price = 1,
                 }
                 );
         }

@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@model IEnumerable<Supplier>
+@{
+    ViewData["Title"] = "Index";
+}
+<h1>Index Supplier</h1>
+
+<a asp-controller="Supplier" asp-action="Create" class="btn btn-primary">
+    Create new supplier
+</a>
+
+<br />
+<br />
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                Supplier Name
+            </th>
+            <th>
+                Contact No.
+            </th>
+            <th>
+                Email
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td width="50%">
+                    @obj.Name
+                </td>
+
+                <td width="30%">
+                    @obj.ContactNo
+                </td>
+
+                <td width="30%">
+                    @obj.Email
+                </td>
+
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Supplier" asp-action="Edit" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> Edit</a>
+                    </div>
+                </td>
+
+                <td>
+                    <div class="w-75 btn-group" role="group">
+                        <a asp-controller="Supplier" asp-action="Delete" asp-route-id="@obj.Id" class="btn btn-primary mx-2"> Delete</a>
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

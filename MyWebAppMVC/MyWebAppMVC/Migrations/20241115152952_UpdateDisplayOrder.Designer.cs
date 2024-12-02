@@ -11,7 +11,7 @@ using MyWebAppMVC.DBOperations;
 
 namespace MyWebAppMVC.Migrations
 {
-    [DbContext(typeof(ArtSupplierDBContext))]
+    [DbContext(typeof(WarehouseDBContext))]
     [Migration("20241115152952_UpdateDisplayOrder")]
     partial class UpdateDisplayOrder
     {

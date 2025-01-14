@@ -14,6 +14,19 @@
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
+    <div class="mb-3">
+
+        <label asp-for="ContactNo">ContactNo</label>
+        <input asp-for="ContactNo" class="form-control" />
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Email">Email</label>
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email" class="text-danger"></span>
+    </div>
     <button type="submit" class="btn btn-danger" style="width:150px"> Delete</button>
 
     <a asp-controller="Supplier" asp-action="Index" class="btn btn-secondary" style="width:150px"> Back to List</a>

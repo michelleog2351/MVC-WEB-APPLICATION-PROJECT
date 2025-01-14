@@ -1,8 +1,127 @@
-﻿@{
+﻿@using MyWebAppMVC.ViewModels
+@{
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@* @model IEnumerable<Product> *@
+@model ProductIndexViewModel
+
+<div class="row pb-3">
+    <h1 style="margin-top: 25px; margin-bottom: 15px; text-align: center">Welcome!</h1>
+    <p>
+        <form method="get" asp-action="Index" class="d-flex flex-column mb-3">
+            <div class="input-group mb-3">
+                <input type="text" value="@Model.SearchString" class="form-control" name="searchString" placeholder="Search for products..." style="height: 50px" />
+                <input type="submit" value="Search" class="btn btn-outline-primary me-4" name="SearchBtn" id="searchbutton" style="width: 100px" />
+
+                <a asp-action="Index" class="btn btn-outline-secondary"
+                   style="display: flex; align-items: center"
+                   title="Clears the screen and resets filters"> Clear</a>
+            </div>
+
+            @if (!String.IsNullOrEmpty(ViewBag.SearchMsg))
+            {
+                <div class="alert alert-info mb-3" style="margin-top: 25px;">
+                    @ViewBag.SearchMsg
+                </div>
+            }
+
+            <br />
+            <br />
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <div class="mb-3" style="flex: 1;">
+               
+                    <label for="warehouse" class="form-label"><b style="font-size: 12px;">Filter by Warehouse</b></label>
+                    <select asp-for="SelectedWarehouse" asp-items="Model.WarehouseList" class="form-select" name="warehouseID" onchange="this.form.submit()">
+                        <option value="" selected>All Warehouses</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 ms-3" style="flex: 1;">
+
+                    <label for="supplier" class="form-label"><b style="font-size: 12px;">Filter by Supplier</b></label>
+                    <select asp-for="SelectedSupplier" asp-items="Model.SupplierList" class="form-select" name="supplierID" onchange="this.form.submit()">
+                        <option value="" selected>All Suppliers</option>
+                    </select>
+                </div>
+
+                <!-- Sort Products in ascending or descending Button -->
+                <div class="mb-3 ms-3" style="flex: 0;">
+                    <a asp-action="Index"
+                       asp-route-sortOrder="@(ViewBag.CurrentSortOrder == "name_asc" ? "name_desc" : "name_asc")"
+                       asp-route-searchString="@Model.SearchString"
+                       asp-route-warehouseID="@Model.SelectedWarehouse"
+                       asp-route-supplierID="@Model.SelectedSupplier"
+                       class="btn btn-outline-secondary"
+                       style="border-radius: 70%; padding: 10px; margin-top: 30px;">
+
+                        @if (ViewBag.CurrentSortOrder == "name_asc")
+                        {
+
+                            <img src="/Images/Index/sort-alpha-up-alt.svg" alt="Sort A-Z" style="width: 24px; height: 24px;" title="Sort products by name from Z-A">
+                        }
+                        else
+                        {
+                            <img src="/Images/Index/sort-alpha-down.svg" alt="Sort Z-A" style="width: 24px; height: 24px;" title="Sort products by name from A-Z">
+                        }
+                    </a>
+                </div>
+            </div>
+
+        </form>
+
+    @foreach (var product in Model.Products)
+    {
+        <div class="col-lg-3 col-md-6">
+            <div class="row p-2">
+                <div class="col-12 p-1" style="border:1px solid #d3d3d3; border-radius:5px;">
+                    <div class="card hover-card">
+                        <img src="@product.Image" class="card-img-top rounded" />
+                        <div class="pl-1">
+                            <p class="card-title h5 text-primary" style="font-size: 18px; padding: 10px 10px 1px 20px">@product.Name</p>
+
+                        </div>
+                        <div class="pl-1" style="padding: 20px 20px 10px 20px">
+                            <p><strong>Qty Available: </strong>@product.Quantity</p>
+                        </div>
+
+                        <div class="pl-1" style="padding: 5px 20px 5px 20px">
+                                <p style="font-size: 18px;"><strong> @product.Price.ToString("€0.00") </strong></p>
+                        </div>
+
+                        <div class="pl-1" style="padding: 10px 20px 10px 20px">
+                            <p>
+                                <strong>Supplier Name: </strong>
+                                @if (product.Suppliers != null && product.Suppliers.Any())
+                                {
+                                    @foreach (var supplier in product.Suppliers)
+                                    {
+                                        <span>@supplier.Name</span>
+                                        @if (supplier != product.Suppliers.Last())
+                                        {
+                                            <span>, </span>
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    <span>No suppliers available</span>
+                                }
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <a asp-action="Details" class="btn btn-primary btn-details form-control" title="View product details" asp-route-id=@product.Id> Details</a>
+                </div>
+            </div>
+        </div>
+    }
+    </p>
+
+
+    <a class="btn btn-success scroll-to-top-btn" onclick="scrollToTop()" title="Scroll to Top">↑</a>
+
 </div>

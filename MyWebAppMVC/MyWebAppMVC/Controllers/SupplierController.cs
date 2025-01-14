@@ -6,7 +6,7 @@ namespace MyWebAppMVC.Controllers
 {
     public class SupplierController : Controller
     {
-        private readonly WarehouseDBContext _DbContext; // private readonly _DbContext of type CategoryDBContext
+        private readonly WarehouseDBContext _DbContext; // private readonly _DbContext of type WarehouseDBContext
 
         // Constructor to get a copy of the DBContext object
         public SupplierController(WarehouseDBContext CopyofdbContext) // DI
@@ -16,7 +16,7 @@ namespace MyWebAppMVC.Controllers
 
         public IActionResult Index()
         {
-            IEnumerable<Supplier> SupplierList = _DbContext.Suppliers; // retrieves all category records
+            IEnumerable<Supplier> SupplierList = _DbContext.Suppliers; // retrieves all supplier records
             return View(SupplierList);
         }
 

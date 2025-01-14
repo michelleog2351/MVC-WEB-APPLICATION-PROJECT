@@ -14,6 +14,27 @@
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
+    <div class="mb-3">
+
+        <label asp-for="ContactNo">ContactNo</label>
+        <input asp-for="ContactNo" class="form-control" />
+        <span asp-validation-for="ContactNo" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address" class="form-control" />
+        <span asp-validation-for="Address" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Location">Location</label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+
     <button type="submit" class="btn btn-danger" style="width:150px"> Delete</button>
 
     <a asp-controller="Warehouse" asp-action="Index" class="btn btn-secondary" style="width:150px"> Back to List</a>

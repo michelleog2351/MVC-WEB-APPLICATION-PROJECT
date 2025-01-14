@@ -20,3 +20,71 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav-link {
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+    .nav-link:hover {
+        font-weight: bold; 
+        color: #d3d3d3 !important; 
+    }
+
+    .nav-link:active {
+        color: #d3d3d3; 
+    }
+
+.card {
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+}
+    .card:hover {
+        transform: scale(1.05); 
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+        cursor: pointer;
+    }
+
+.btn-details {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+    .btn-details:hover {
+        background-color: #d3d3d3;
+        transform: scale(1.05);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+    }
+
+    .btn-details:focus {
+        box-shadow: 0px 0px 0px 3px rgba(80, 80, 80, 0.5); 
+    }
+
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #28a745;
+    color: white;
+    padding: 0;
+    border-radius: 70%; 
+    width: 70px; 
+    height: 70px;
+    font-size: 50px; 
+    font-weight: bolder;
+    text-align: center; 
+    line-height: 70px; /* Vertically centre the arrow symbol */
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+    .scroll-to-top-btn:hover {
+        background-color: #6cd46f; /* Darker green on hover */
+        transform: scale(1.1); /* Slightly increase the size on hover */
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); 
+        border-radius: 5px; /* Square the corners when hovered over */
+    }
+
+    .scroll-to-top-btn:focus{
+        outline: 2px solid #000000;
+        outline-offset: 4px;
+    }

@@ -16,6 +16,11 @@ namespace MyWebAppMVC.DBOperations
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Product>() // Manual configuration testing with Fluent API
+                .HasOne(p => p.Warehouse)
+                .WithMany(w => w.Products)
+                .HasForeignKey(p => p.WarehouseId);
+
             modelBuilder.Seed();
         }
 

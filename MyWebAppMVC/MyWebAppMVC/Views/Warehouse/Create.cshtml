@@ -6,6 +6,8 @@
 <form method="post">
 
     <h2>Create new warehouse</h2>
+    <br />
+
     <div asp-validation-summary="All"></div>
 
     <div class="mb-3">
@@ -17,7 +19,7 @@
 
         <div class="mb-3">
             <label asp-for="ContactNo">Contact No.</label>
-            <input asp-for="ContactNo" class="form-control" />
+            <input asp-for="ContactNo" class="form-control" placeholder="087 031 6373" />
             <span asp-validation-for="ContactNo" class="text-danger"></span>
         </div>
 
@@ -29,7 +31,7 @@
 
         <div class="mb-3">
             <label asp-for="Location">Location</label>
-            <input asp-for="Location" class="form-control" />
+            <input asp-for="Location" class="form-control" placeholder="E.g. France" />
             <span asp-validation-for="Location" class="text-danger"></span>
         </div>
     </div>

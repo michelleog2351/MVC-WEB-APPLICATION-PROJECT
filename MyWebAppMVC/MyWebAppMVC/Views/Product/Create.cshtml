@@ -3,14 +3,16 @@
 *@
 @model Product
 
-<form method="post">
+<form method="post" asp-action="Create" enctype="multipart/form-data">
 
-    <h2>Create new product</h2>
+    <h2>Create Product</h2>
+    <br />
+
     <div asp-validation-summary="All"></div>
     <div class="mb-3">
 
         <div class="mb-3">
-            <label asp-for="Name">Product Name</label>
+            <label asp-for="Name">Name</label>
             <input asp-for="Name" class="form-control"/>
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
@@ -26,6 +28,30 @@
             <input asp-for="Price" class="form-control" />
             <span asp-validation-for="Price" class="text-danger"></span>
         </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Image"> Image File</label>
+        <input type="file" name="file" class="form-control" />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Suppliers">Suppliers</label>
+        <select id="Suppliers" name="SupplierIds" multiple class="form-select">
+            @foreach (var supplier in ViewBag.SupplierList)
+            {
+                <option value="@supplier.Value">@supplier.Text</option>
+            }
+        </select>
+    </div>
+
+
+    <div class="mb-3">
+
+        <label asp-for="WarehouseId">Warehouse Name</label>
+        <select asp-for="WarehouseId" asp-items="@ViewBag.WarehouseList" class="form-select">
+            <option disabled selected> --Select Warehouse --</option>
+        </select>
     </div>
 
     <button type="submit" class="btn btn-primary" style="width:150px"> Create</button>

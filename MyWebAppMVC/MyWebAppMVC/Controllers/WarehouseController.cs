@@ -2,12 +2,13 @@
 using Microsoft.AspNetCore.Mvc;
 using MyWebAppMVC.DBOperations;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using Microsoft.EntityFrameworkCore;
 
 namespace MyWebAppMVC.Controllers
 {
     public class WarehouseController : Controller
     {
-        private readonly WarehouseDBContext _DbContext; // private readonly _DbContext of type CategoryDBContext
+        private readonly WarehouseDBContext _DbContext; // private readonly _DbContext of type WarehouseDBContext
 
         // Constructor to get a copy of the DBContext object
         public WarehouseController(WarehouseDBContext CopyofdbContext) // DI
@@ -15,9 +16,9 @@ namespace MyWebAppMVC.Controllers
             _DbContext = CopyofdbContext;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            IEnumerable<Warehouse> warehouseList = _DbContext.Warehouses; // retrieves all category records
+            var warehouseList = await _DbContext.Warehouses.ToListAsync(); // retrieves all warehouse records
             return View(warehouseList);
         }
 
@@ -28,12 +29,12 @@ namespace MyWebAppMVC.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Warehouse newWarehouse)
+        public async Task<IActionResult> Create(Warehouse newWarehouse)
         {
             if (ModelState.IsValid)
             {
                 _DbContext.Warehouses.Add(newWarehouse);
-                _DbContext.SaveChanges();
+                await _DbContext.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             return View(newWarehouse);
@@ -41,14 +42,14 @@ namespace MyWebAppMVC.Controllers
 
         // Get Action for Edit
         [HttpGet]
-        public IActionResult Edit(int id)
+        public async Task<IActionResult> Edit(int id)
         {
             if (id == 0)
             {
                 return NotFound();
             }
 
-            var warehousefound = _DbContext.Warehouses.Find(id);
+            var warehousefound = await _DbContext.Warehouses.FindAsync(id);
             if (warehousefound == null)
                 return NotFound();
 
@@ -70,14 +71,14 @@ namespace MyWebAppMVC.Controllers
 
         // Get Action for Delete
         [HttpGet]
-        public IActionResult Delete(int Id)
+        public async Task<IActionResult> Delete(int Id)
         {
             if (Id == 0)
             {
                 return NotFound();
             }
 
-            var warehousefound = _DbContext.Warehouses.Find(Id);
+            var warehousefound = await _DbContext.Warehouses.FindAsync(Id);
             if (warehousefound == null)
                 return NotFound();
 
@@ -86,12 +87,12 @@ namespace MyWebAppMVC.Controllers
 
         // Post Action for Delete
         [HttpPost]
-        public IActionResult Delete(Warehouse newWarehouse)
+        public async Task<IActionResult> Delete(Warehouse newWarehouse)
         {
             if (ModelState.IsValid)
             {
                 _DbContext.Warehouses.Remove(newWarehouse);
-                _DbContext.SaveChanges();
+                await _DbContext.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
             return View(newWarehouse);

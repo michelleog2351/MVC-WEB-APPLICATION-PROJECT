@@ -6,17 +6,19 @@
 <form method="post">
 
     <h2>Create new supplier</h2>
+    <br />
+
     <div asp-validation-summary="All"></div>
     <div class="mb-3">
         <div class="mb-3">
-            <label asp-for="Name">Suppllier Name</label>
+            <label asp-for="Name">Supplier Name</label>
             <input asp-for="Name" class="form-control" />
             <span asp-validation-for="Name" class="text-danger"></span>
         </div>
 
         <div class="mb-3">
             <label asp-for="ContactNo">Contact No.</label>
-            <input asp-for="ContactNo" class="form-control" />
+            <input asp-for="ContactNo" class="form-control" placeholder="087 031 6373"/>
             <span asp-validation-for="ContactNo" class="text-danger"></span>
         </div>
 

@@ -2,3 +2,9 @@
 // for details on configuring this project to bundle and minify static web assets.
 
 // Write your JavaScript code.
+
+function scrollToTop()
+{
+    window.scrollTo({ top: 0, behavior: "smooth" }); // scroll-to-top button
+}
+

@@ -3,31 +3,71 @@
 *@
 @model Product
 
-<form method="post" asp-action="Edit">
 
-    <h2>Edit Product</h2>
-    <div asp-validation-summary="All"></div>
-    <div class="mb-3">
-        <label asp-for="Name">Product Name</label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+<form method="post" asp-action="Edit" enctype="multipart/form-data">
+
+    <div class="row pb-2">
+        <div class="col-9">
+
+            <h2>Edit Product</h2>
+            <div asp-validation-summary="All"></div>
+            <div class="mb-3">
+                <label asp-for="Name">Product Name</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Quantity">Quantity</label>
+                <input asp-for="Quantity" class="form-control" />
+                <span asp-validation-for="Quantity" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Price">Price</label>
+                <input asp-for="Price" class="form-control" />
+                <span asp-validation-for="Price" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Image"> Image File</label>
+                <input asp-for="Image" hidden /> @* If we don’t edit the image file, it should keep the existing value. That’s why we need the hidden value *@
+                <img type="file" name="file" class="form-control" />
+            </div>
+
+@*             <div class="mb-3">
+                <label asp-for="Suppliers">SupplierName</label>
+                <select asp-for="Suppliers" asp-items="@ViewBag.SupplierList" class="form-select">
+                </select>
+            </div> *@
+
+            <div class="mb-3">
+                <label asp-for="Suppliers">Suppliers</label>
+                <select id="Suppliers" name="selectedSuppliers" multiple class="form-select">
+                    @foreach (var supplier in ViewBag.SupplierList)
+                    {
+                        <option value="@supplier.Value">@supplier.Text</option>
+                    }
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="WarehouseId">WarehouseName</label>
+                <select asp-for="WarehouseId" asp-items="@ViewBag.WarehouseList" class="form-select">
+                </select>
+            </div>
+
+        </div>
+
+        <div class="col-3">
+            <img src="@Model.Image" />
+        </div>
+
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary" style="width:150px"> Update</button>
+            <a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px"> Back to List</a>
+        </div>
     </div>
-
-    <div class="mb-3">
-        <label asp-for="Quantity">Quantity</label>
-        <input asp-for="Quantity" class="form-control" />
-        <span asp-validation-for="Quantity" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="Price">Price</label>
-        <input asp-for="Price" class="form-control" />
-        <span asp-validation-for="Price" class="text-danger"></span>
-    </div>
-
-    <button type="submit" class="btn btn-primary" style="width:150px"> Update</button>
-
-    <a asp-controller="Product" asp-action="Index" class="btn btn-secondary" style="width:150px"> Back to List</a>
 </form>
 
 @section Scripts {

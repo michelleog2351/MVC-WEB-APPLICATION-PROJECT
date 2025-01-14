@@ -5,13 +5,23 @@
 
 <form method="post" asp-action="Delete">
 
-    <h2>Delete Supplier</h2>
+    <h2>Delete Product</h2>
     <div asp-validation-summary="All"></div>
     <div class="mb-3">
         <label asp-for="Name">Product Name</label>
-        <input asp-for="Name" class="form-control" />
-        <span asp-validation-for="Name" class="text-danger"></span>
+        <input asp-for="Name" class="form-control"  />
+    </div>
+    
+    <div class="mb-3">
 
+        <label asp-for="Quantity">Quantity</label>
+        <input asp-for="Quantity" class="form-control"  />
+    </div>
+
+    <div class="mb-3">
+
+        <label asp-for="Price">Price</label>
+        <input asp-for="Price" class="form-control"  />
     </div>
 
     <button type="submit" class="btn btn-danger" style="width:150px"> Delete</button>

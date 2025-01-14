@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F6F3C3BD-CED1-4887-AE12-B2110D6C061D}|MyWebAppMVC\\MyWebAppMVC.csproj|c:\\users\\l00176523\\onedrive - atlantic tu\\s5\\commercial programming part2\\mvc project work\\artefact1\\mvc-web-application-project\\mywebappmvc\\mywebappmvc\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F6F3C3BD-CED1-4887-AE12-B2110D6C061D}|MyWebAppMVC\\MyWebAppMVC.csproj|solutionrelative:mywebappmvc\\views\\home\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -22,6 +27,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\Views\\Home\\Details.cshtml",
+              "RelativeDocumentMoniker": "MyWebAppMVC\\Views\\Home\\Details.cshtml",
+              "ToolTip": "C:\\Users\\L00176523\\OneDrive - Atlantic TU\\S5\\Commercial Programming Part2\\MVC PROJECT WORK\\Artefact1\\MVC-WEB-APPLICATION-PROJECT\\MyWebAppMVC\\MyWebAppMVC\\Views\\Home\\Details.cshtml",
+              "RelativeToolTip": "MyWebAppMVC\\Views\\Home\\Details.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-06T01:42:54.211Z",
+              "EditorCaption": ""
             }
           ]
         }
